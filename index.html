@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro MEMI - UMSS</title>
+    <link rel="stylesheet" type="text/css" href="css/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="w3-light-grey">
+    <div id="sidebar">
+        <div class="toggle-btn">
+            <span>&#9776;</span>
+        </div>
+        <ul>
+            <li class="logo-section">
+                <img src="img/Logo.png" alt="Logo Centro MEMI" class="sidebar-logo">
+                <h3>Centro MEMI</h3>
+                <p>UMSS</p>
+            </li>
+            
+            <li class="menu-item">
+                <i class="fa fa-home"></i> Inicio
+            </li>
+            
+            <li class="menu-item dropdown" data-target="mision-submenu">
+                <i class="fa fa-bullseye"></i> Misión Visión Valores
+                <span class="arrow">&#9662;</span>
+            </li>
+            <ul class="submenu" id="mision-submenu">
+                <li><a href="#mision"><i class="fa fa-target"></i> Misión</a></li>
+                <li><a href="#vision"><i class="fa fa-eye"></i> Visión</a></li>
+                <li><a href="#valores"><i class="fa fa-heart"></i> Valores</a></li>
+            </ul>
+
+            <li class="menu-item dropdown" data-target="acerca-submenu">
+                <i class="fa fa-info-circle"></i> Acerca de
+                <span class="arrow">&#9662;</span>
+            </li>
+            <ul class="submenu" id="acerca-submenu">
+                <li><a href="#antecedentes"><i class="fa fa-history"></i> Antecedentes</a></li>
+                <li><a href="#datos-historicos"><i class="fa fa-calendar"></i> Datos Históricos</a></li>
+                <li><a href="#autoridades"><i class="fa fa-users"></i> Autoridades</a></li>
+            </ul>
+
+            <li class="menu-item dropdown" data-target="cursos-submenu">
+                <i class="fa fa-graduation-cap"></i> Cursos / Seminarios
+                <span class="arrow">&#9662;</span>
+            </li>
+            <ul class="submenu" id="cursos-submenu">
+                <li><a href="#publicaciones"><i class="fa fa-book"></i> Publicaciones</a></li>
+                <li><a href="#servicios"><i class="fa fa-cogs"></i> Servicios</a></li>
+                <li><a href="#icpc"><i class="fa fa-code"></i> ICPC UMSS</a></li>
+                <li><a href="#contacto"><i class="fa fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </ul>
+    </div>
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+    <header class="header-section w3-dark-grey">
+        <div class="w3-container">
+            <div class="w3-row header-content">
+                <div class="w3-col m6 s12 w3-center logo-container">
+                    <img src="img/Logo.png" alt="Logo Centro MEMI" class="header-logo">
+                    <h1 class="w3-text-white logo-title">Centro MEMI</h1>
+                </div>
+                <div class="w3-col m6 s12 w3-center logo-container">
+                    <img src="img/LogoFCyT.png" alt="Logo FCyT" class="header-logo">
+                    <h2 class="w3-text-white logo-title">FCyT - UMSS</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="carousel-area w3-container">
+        <div class="carousel-container w3-card w3-white">
+            <div class="carousel">
+                <div class="slides">
+                    <div class="slides">
+    <div class="slide active">
+        <img src="img/imagen.png" alt="Avisos y Cursos del Centro MEMI" class="slide-image">
+        <div class="slide-overlay">
+            <h3>Avisos Institucionales</h3>
+            <p>Información sobre cursos, seminarios y actividades académicas</p>
+        </div>
+    </div>
+    <div class="slide">
+        <img src="img/imagen1.png" alt="Edificio del Centro MEMI" class="slide-image">
+        <div class="slide-overlay">
+            <h3>Nuestro Edificio</h3>
+            <p>Infraestructura moderna y espacios funcionales para la educación</p>
+        </div>
+    </div>
+    <div class="slide">
+        <img src="img/imagen2.png" alt="Laboratorios del Centro MEMI" class="slide-image">
+        <div class="slide-overlay">
+            <h3>Laboratorios Especializados</h3>
+            <p>Aulas equipadas con computadoras para clases prácticas</p>
+        </div>
+    </div>
+</div>
+                <div class="carousel-dots w3-center">
+                    <button class="dot active" data-slide="0"></button>
+                    <button class="dot" data-slide="1"></button>
+                    <button class="dot" data-slide="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="w3-container w3-margin-top main-content">
+        <div class="w3-card w3-white w3-padding-large content-card">
+            <h2 class="w3-center w3-text-teal section-title">Bienvenidos al Centro MEMI</h2>
+            <div class="title-divider w3-center"></div>
+            <div class="w3-row-padding w3-margin-top">
+                <div class="w3-col m6 s12">
+                    <div class="info-box w3-card w3-padding">
+                        <h3 class="w3-text-teal"><i class="fa fa-university"></i> Nuestra Misión</h3>
+                        <p>El Centro MEMI de la Universidad Mayor de San Simón es un espacio académico 
+                        moderno que alberga aulas, laboratorios y oficinas administrativas.</p>
+                    </div>
+                </div>
+                <div class="w3-col m6 s12">
+                    <div class="info-box w3-card w3-padding">
+                        <h3 class="w3-text-teal"><i class="fa fa-cogs"></i> Nuestros Servicios</h3>
+                        <p>Ofrecemos laboratorios de computación, aulas multimedia, 
+                        espacios de investigación y capacitación especializada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-section w3-dark-grey w3-padding-32 w3-margin-top">
+        <div class="w3-container">
+            <div class="w3-row-padding contact-grid">
+                <div class="w3-col m4 s12 w3-center contact-item">
+                    <div class="contact-card w3-padding">
+                        <i class="fa fa-envelope w3-xxlarge w3-text-teal"></i>
+                        <h4 class="w3-text-white">Email</h4>
+                        <p class="w3-text-light-grey">memi@fcyt.umss.edu.bo</p>
+                    </div>
+                </div>
+                <div class="w3-col m4 s12 w3-center contact-item">
+                    <div class="contact-card w3-padding">
+                        <i class="fa fa-facebook w3-xxlarge w3-text-teal"></i>
+                        <h4 class="w3-text-white">Facebook</h4>
+                        <a href="https://www.facebook.com/memiumss/" target="_blank" class="w3-text-light-grey w3-hover-text-teal">
+                            facebook.com/memiumss
+                        </a>
+                    </div>
+                </div>
+                <div class="w3-col m4 s12 w3-center contact-item">
+                    <div class="contact-card w3-padding">
+                        <i class="fa fa-globe w3-xxlarge w3-text-teal"></i>
+                        <h4 class="w3-text-white">Sitio Web</h4>
+                        <a href="https://www.fcyt.umss.edu.bo" target="_blank" class="w3-text-light-grey w3-hover-text-teal">
+                            www.fcyt.umss.edu.bo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-center w3-margin-top footer-bottom">
+                <p class="w3-text-grey">&copy; 2025 Centro MEMI - Facultad de Ciencias y Tecnología - UMSS</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/carrusel.js"></script>
+</body>
+</html>
