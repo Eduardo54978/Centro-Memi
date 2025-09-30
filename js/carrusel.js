@@ -6,12 +6,13 @@ document.addEventListener('DOMContentLoaded', function() {
   console.log('DOM cargado - Iniciando componentes');
   initSidebar();
   initCarouselBasic();
+  initTouchGestures(); 
   console.log('Todos los componentes inicializados');
 });
 function initSidebar() {
   console.log('Inicializando sidebar...');
   
-  const toggleBtn = document.querySelector('.toggle-btn');
+  const toggleBtn = document.getElementById('mobile-menu-btn');
   const sidebar = document.getElementById('sidebar');
   const overlay = document.getElementById('sidebar-overlay');
   const dropdownItems = document.querySelectorAll('.dropdown');
@@ -53,8 +54,7 @@ function initSidebar() {
       toggleSubmenu(this);
     });
   });
-
-  console.log('✅ Sidebar inicializado correctamente');
+console.log('✅ Sidebar inicializado correctamente');
 }
 
 function toggleSidebar() {
@@ -119,8 +119,45 @@ function toggleSubmenu(dropdownItem) {
   
   console.log('Submenu', targetId, submenu.classList.contains('active') ? 'ABIERTO' : 'CERRADO');
 }
+
+function initTouchGestures() {
+  const carousel = document.querySelector('.carousel');
+  if (!carousel) return;
+  
+  let touchStartX = 0;
+  let touchEndX = 0;
+  
+  carousel.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+  
+  carousel.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  }, { passive: true });
+  
+  function handleSwipe() {
+    const swipeThreshold = 50;
+    const diff = touchStartX - touchEndX;
+    
+    if (Math.abs(diff) > swipeThreshold) {
+      if (diff > 0) {
+        nextSlide();
+      } else {
+        const slides = document.querySelectorAll('.slide');
+        const prevIndex = currentSlide === 0 ? slides.length - 1 : currentSlide - 1;
+        goToSlide(prevIndex);
+      }
+      resetAutoPlay();
+    }
+  }
+  
+  console.log('Gestos tactiles inicializados');
+}
+
 function initCarouselBasic() {
   console.log('Inicializando carrusel...');
+  
   
   const slides = document.querySelectorAll('.slide');
   const dots = document.querySelectorAll('.dot');
@@ -218,6 +255,24 @@ window.CentroMEMI = {
     resume: startAutoPlay
   }
 };
+if (window.innerWidth <= 768) {
+  window.addEventListener('orientationchange', function() {
+    console.log('📱 Orientación cambiada');
+    setTimeout(() => {
+      const sidebar = document.getElementById('sidebar');
+      if (sidebar.classList.contains('active')) {
+        closeSidebar();
+      }
+      const carousel = document.querySelector('.carousel');
+      if (carousel) {
+        carousel.style.height = window.innerHeight * 0.5 + 'px';
+      }
+    }, 100);
+  });
+}
+document.addEventListener('gesturestart', function(e) {
+  e.preventDefault();
+});
 console.log(`
 🏛️ Centro MEMI Día 2 - Sistema cargado
 ✅ Sidebar con submenús: OK

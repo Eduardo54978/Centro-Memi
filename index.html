@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#20c997">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Centro MEMI - UMSS</title>
+    
+    <!-- CSS Frameworks -->
     <link rel="stylesheet" type="text/css" href="css/w3.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="w3-light-grey">
+    
+    <!-- Botón hamburguesa FUERA del sidebar -->
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menú de navegación">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+
+    <!-- Sidebar mejorado con submenús -->
     <div id="sidebar">
-        <div class="toggle-btn">
-            <span>&#9776;</span>
-        </div>
         <ul>
             <li class="logo-section">
                 <img src="img/Logo.png" alt="Logo Centro MEMI" class="sidebar-logo">
@@ -56,7 +68,11 @@
             </ul>
         </ul>
     </div>
+
+    <!-- Overlay para cerrar sidebar -->
     <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    <!-- Header principal -->
     <header class="header-section w3-dark-grey">
         <div class="w3-container">
             <div class="w3-row header-content">
@@ -71,33 +87,35 @@
             </div>
         </div>
     </header>
+
+    <!-- Área del carrusel -->
     <section class="carousel-area w3-container">
         <div class="carousel-container w3-card w3-white">
             <div class="carousel">
                 <div class="slides">
-                    <div class="slides">
-    <div class="slide active">
-        <img src="img/imagen.png" alt="Avisos y Cursos del Centro MEMI" class="slide-image">
-        <div class="slide-overlay">
-            <h3>Avisos Institucionales</h3>
-            <p>Información sobre cursos, seminarios y actividades académicas</p>
-        </div>
-    </div>
-    <div class="slide">
-        <img src="img/imagen1.png" alt="Edificio del Centro MEMI" class="slide-image">
-        <div class="slide-overlay">
-            <h3>Nuestro Edificio</h3>
-            <p>Infraestructura moderna y espacios funcionales para la educación</p>
-        </div>
-    </div>
-    <div class="slide">
-        <img src="img/imagen2.png" alt="Laboratorios del Centro MEMI" class="slide-image">
-        <div class="slide-overlay">
-            <h3>Laboratorios Especializados</h3>
-            <p>Aulas equipadas con computadoras para clases prácticas</p>
-        </div>
-    </div>
-</div>
+                    <div class="slide active">
+                        <img src="img/imagen.png" alt="Avisos y Cursos del Centro MEMI" class="slide-image">
+                        <div class="slide-overlay">
+                            <h3>Avisos Institucionales</h3>
+                            <p>Información sobre cursos, seminarios y actividades académicas</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/imagen1.png" alt="Edificio del Centro MEMI" class="slide-image">
+                        <div class="slide-overlay">
+                            <h3>Nuestro Edificio</h3>
+                            <p>Infraestructura moderna y espacios funcionales para la educación</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/imagen2.png" alt="Laboratorios del Centro MEMI" class="slide-image">
+                        <div class="slide-overlay">
+                            <h3>Laboratorios Especializados</h3>
+                            <p>Aulas equipadas con computadoras para clases prácticas</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Indicadores -->
                 <div class="carousel-dots w3-center">
                     <button class="dot active" data-slide="0"></button>
                     <button class="dot" data-slide="1"></button>
@@ -106,10 +124,13 @@
             </div>
         </div>
     </section>
+
+    <!-- Contenido principal -->
     <main class="w3-container w3-margin-top main-content">
         <div class="w3-card w3-white w3-padding-large content-card">
             <h2 class="w3-center w3-text-teal section-title">Bienvenidos al Centro MEMI</h2>
             <div class="title-divider w3-center"></div>
+            
             <div class="w3-row-padding w3-margin-top">
                 <div class="w3-col m6 s12">
                     <div class="info-box w3-card w3-padding">
@@ -128,6 +149,8 @@
             </div>
         </div>
     </main>
+
+    <!-- Footer -->
     <footer class="footer-section w3-dark-grey w3-padding-32 w3-margin-top">
         <div class="w3-container">
             <div class="w3-row-padding contact-grid">
@@ -158,10 +181,17 @@
                 </div>
             </div>
             <div class="w3-center w3-margin-top footer-bottom">
-                <p class="w3-text-grey">&copy; 2025 Centro MEMI - Facultad de Ciencias y Tecnología - UMSS</p>
+                <p class="w3-text-grey">&copy; 2024 Centro MEMI - Facultad de Ciencias y Tecnología - UMSS</p>
             </div>
         </div>
     </footer>
+
+    <noscript>
+        <div class="w3-panel w3-yellow">
+            <p>Este sitio requiere JavaScript para funcionar correctamente. Por favor actívalo.</p>
+        </div>
+    </noscript>
+
     <script src="js/carrusel.js"></script>
 </body>
 </html>
