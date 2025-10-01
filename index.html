@@ -8,22 +8,58 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Centro MEMI - UMSS</title>
-    
-    <!-- CSS Frameworks -->
     <link rel="stylesheet" type="text/css" href="css/w3.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="w3-light-grey">
-    
-    <!-- Botón hamburguesa FUERA del sidebar -->
     <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menú de navegación">
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span> 
     </button>
-
-    <!-- Sidebar mejorado con submenús -->
+    <div class="banner-memi">
+  <svg class="banner-svg" viewBox="0 0 1200 150" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="gradientTurquoise" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#20c997;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#17a288;stop-opacity:1" />
+      </linearGradient>
+      <linearGradient id="gradientDark" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#151719;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#2c3e50;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <rect width="1200" height="150" fill="url(#gradientDark)"/>
+    <path d="M0,30 Q300,10 600,30 T1200,30 L1200,0 L0,0 Z" fill="url(#gradientTurquoise)" opacity="0.9"/>
+    <path d="M0,150 Q300,120 600,150 T1200,150 L1200,120 Q900,130 600,120 T0,120 Z" fill="url(#gradientTurquoise)" opacity="0.3"/>
+    <path d="M800,0 Q900,40 1000,20 T1200,30 L1200,0 Z" fill="#ff6b9d" opacity="0.4"/>
+    <circle cx="150" cy="75" r="40" fill="#20c997" opacity="0.2"/>
+    <circle cx="1050" cy="75" r="50" fill="#20c997" opacity="0.15"/>
+    <polygon points="100,20 120,60 80,60" fill="white" opacity="0.1"/>
+    <polygon points="1100,90 1120,130 1080,130" fill="white" opacity="0.1"/>
+  </svg>
+  <div class="banner-content">
+    <div class="banner-logo-left">
+      <img src="img/Logo.png" alt="Logo Centro MEMI" class="banner-logo-img">
+    </div>
+    <div class="banner-text">
+      <h1 class="banner-title">EDIFICIO MEMI</h1>
+      <p class="banner-subtitle">UNIVERSIDAD MAYOR DE SAN SIMÓN</p>
+    </div>
+    <div class="banner-logo-right">
+      <div class="sphere-container">
+        <div class="sphere">
+          <div class="sphere-text">MEMI</div>
+          <div class="sphere-text">CENTRO</div>
+          <div class="sphere-text">UMSS</div>
+          <div class="sphere-text">FCyT</div>
+        </div>
+      </div>
+      <img src="img/LogoFCyT.png" alt="Logo FCyT" class="banner-logo-img">
+    </div>
+  </div>
+</div>
     <div id="sidebar">
         <ul>
             <li class="logo-section">
@@ -68,27 +104,7 @@
             </ul>
         </ul>
     </div>
-
-    <!-- Overlay para cerrar sidebar -->
     <div id="sidebar-overlay" class="sidebar-overlay"></div>
-
-    <!-- Header principal -->
-    <header class="header-section w3-dark-grey">
-        <div class="w3-container">
-            <div class="w3-row header-content">
-                <div class="w3-col m6 s12 w3-center logo-container">
-                    <img src="img/Logo.png" alt="Logo Centro MEMI" class="header-logo">
-                    <h1 class="w3-text-white logo-title">Centro MEMI</h1>
-                </div>
-                <div class="w3-col m6 s12 w3-center logo-container">
-                    <img src="img/LogoFCyT.png" alt="Logo FCyT" class="header-logo">
-                    <h2 class="w3-text-white logo-title">FCyT - UMSS</h2>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Área del carrusel -->
     <section class="carousel-area w3-container">
         <div class="carousel-container w3-card w3-white">
             <div class="carousel">
@@ -115,7 +131,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Indicadores -->
                 <div class="carousel-dots w3-center">
                     <button class="dot active" data-slide="0"></button>
                     <button class="dot" data-slide="1"></button>
@@ -124,8 +139,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Contenido principal -->
     <main class="w3-container w3-margin-top main-content">
         <div class="w3-card w3-white w3-padding-large content-card">
             <h2 class="w3-center w3-text-teal section-title">Bienvenidos al Centro MEMI</h2>
@@ -149,8 +162,6 @@
             </div>
         </div>
     </main>
-
-    <!-- Footer -->
     <footer class="footer-section w3-dark-grey w3-padding-32 w3-margin-top">
         <div class="w3-container">
             <div class="w3-row-padding contact-grid">
@@ -181,17 +192,10 @@
                 </div>
             </div>
             <div class="w3-center w3-margin-top footer-bottom">
-                <p class="w3-text-grey">&copy; 2024 Centro MEMI - Facultad de Ciencias y Tecnología - UMSS</p>
+                <p class="w3-text-grey">Creado por 202401351@est.umss,edu</p>
             </div>
         </div>
     </footer>
-
-    <noscript>
-        <div class="w3-panel w3-yellow">
-            <p>Este sitio requiere JavaScript para funcionar correctamente. Por favor actívalo.</p>
-        </div>
-    </noscript>
-
     <script src="js/carrusel.js"></script>
 </body>
 </html>
