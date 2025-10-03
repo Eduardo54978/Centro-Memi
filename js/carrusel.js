@@ -307,3 +307,50 @@ document.querySelectorAll('.submenu a').forEach(link => {
     }
   });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const navbarToggle = document.getElementById('navbar-toggle');
+    const navbarMenu = document.getElementById('navbar-menu');
+    const dropdowns = document.querySelectorAll('.navbar-menu .dropdown');
+    if (navbarToggle) {
+        navbarToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            this.classList.toggle('active');
+            navbarMenu.classList.toggle('active');
+        });
+    }
+    if (window.innerWidth <= 768) {
+        dropdowns.forEach(dropdown => {
+            const link = dropdown.querySelector('.dropdown-toggle');
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            });
+        });
+    }
+    const menuLinks = document.querySelectorAll('.navbar-menu a[href^="#"]');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href !== '#') {
+                e.preventDefault();
+                const targetId = href.substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    document.querySelectorAll('.antecedentes-section, .content-section').forEach(section => {
+                        section.classList.remove('active');
+                    });
+                    targetSection.classList.add('active');
+                    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    navbarMenu.classList.remove('active');
+                    navbarToggle.classList.remove('active');
+                }
+            }
+        });
+    });
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.navbar-horizontal')) {
+            navbarMenu.classList.remove('active');
+            navbarToggle.classList.remove('active');
+        }
+    });
+});
