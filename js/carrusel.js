@@ -292,3 +292,18 @@ setTimeout(() => {
     console.log('Sidebar:', sidebar);
   }
 }, 1000);
+document.querySelectorAll('.submenu a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      document.querySelectorAll('.antecedentes-section, .content-section').forEach(section => {
+  section.classList.remove('active');
+   });
+      targetSection.classList.add('active');
+      targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      closeSidebar();
+    }
+  });
+});
