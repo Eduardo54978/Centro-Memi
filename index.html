@@ -12,144 +12,93 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<nav class="navbar-horizontal">
-    <div class="navbar-container">
-        <div class="navbar-logo">
-            <img src="img/Logo.png" alt="Centro MEMI">
-            <span class="navbar-brand">Centro MEMI</span>
+<header class="header-integrado">
+    <nav class="navbar-top">
+        <div class="navbar-container">
+            <button class="navbar-toggle" id="navbar-toggle">
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+            </button>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li class="nav-item">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Misión Visión Valores
+                        <i class="fa fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#mision">Misión</a></li>
+                        <li><a href="#vision">Visión</a></li>
+                        <li><a href="#valores">Valores</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Acerca de
+                        <i class="fa fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#antecedentes">Antecedentes</a></li>
+                        <li><a href="#datos-historicos">Datos Históricos</a></li>
+                        <li><a href="#autoridades">Autoridades</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Cursos / Seminarios
+                        <i class="fa fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#publicaciones">Publicaciones</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#icpc">ICPC UMSS</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-        <button class="navbar-toggle" id="navbar-toggle">
-            <span class="toggle-line"></span>
-            <span class="toggle-line"></span>
-            <span class="toggle-line"></span>
-        </button>
-        <ul class="navbar-menu" id="navbar-menu">
-            <li class="nav-item">
-                <a href="#inicio" class="nav-link">Inicio</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle">
-                    Misión Visión Valores
-                    <i class="fa fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#mision">Misión</a></li>
-                    <li><a href="#vision">Visión</a></li>
-                    <li><a href="#valores">Valores</a></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle">
-                    Acerca de
-                    <i class="fa fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#antecedentes">Antecedentes</a></li>
-                    <li><a href="#datos-historicos">Datos Históricos</a></li>
-                    <li><a href="#autoridades">Autoridades</a></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle">
-                    Cursos / Seminarios
-                    <i class="fa fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#publicaciones">Publicaciones</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#icpc">ICPC UMSS</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</nav>
-    <div class="banner-memi">
-  <svg class="banner-svg" viewBox="0 0 1200 150" preserveAspectRatio="xMidYMid slice">
-    <defs>
-      <linearGradient id="gradientTurquoise" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style="stop-color:#20c997;stop-opacity:1" />
-        <stop offset="100%" style="stop-color:#17a288;stop-opacity:1" />
-      </linearGradient>
-      <linearGradient id="gradientDark" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" style="stop-color:#151719;stop-opacity:1" />
-        <stop offset="100%" style="stop-color:#2c3e50;stop-opacity:1" />
-      </linearGradient>
-    </defs>
-    <rect width="1200" height="150" fill="url(#gradientDark)"/>
-    <path d="M0,30 Q300,10 600,30 T1200,30 L1200,0 L0,0 Z" fill="url(#gradientTurquoise)" opacity="0.9"/>
-    <path d="M0,150 Q300,120 600,150 T1200,150 L1200,120 Q900,130 600,120 T0,120 Z" fill="url(#gradientTurquoise)" opacity="0.3"/>
-    <path d="M800,0 Q900,40 1000,20 T1200,30 L1200,0 Z" fill="#ff6b9d" opacity="0.4"/>
-    <circle cx="150" cy="75" r="40" fill="#20c997" opacity="0.2"/>
-    <circle cx="1050" cy="75" r="50" fill="#20c997" opacity="0.15"/>
-    <polygon points="100,20 120,60 80,60" fill="white" opacity="0.1"/>
-    <polygon points="1100,90 1120,130 1080,130" fill="white" opacity="0.1"/>
-  </svg>
-  <div class="banner-content">
-    <div class="banner-logo-left">
-      <img src="img/Logo.png" alt="Logo Centro MEMI" class="banner-logo-img">
-    </div>
-    <div class="banner-text">
-      <h1 class="banner-title">EDIFICIO MEMI</h1>
-      <p class="banner-subtitle">UNIVERSIDAD MAYOR DE SAN SIMÓN</p>
-    </div>
-    <div class="banner-logo-right">
-      <div class="sphere-container">
-        <div class="sphere">
-          <div class="sphere-text">MEMI</div>
-          <div class="sphere-text">CENTRO</div>
-          <div class="sphere-text">UMSS</div>
-          <div class="sphere-text">FCyT</div>
+    </nav>
+    <div class="banner-decorativo">
+        <svg class="banner-svg" viewBox="0 0 1200 120" preserveAspectRatio="xMidYMid slice">
+            <defs>
+                <linearGradient id="gradTurquoise" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#20c997;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#17a288;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            
+            <rect width="1200" height="120" fill="#151719"/>
+            <path d="M0,20 Q300,5 600,20 T1200,20 L1200,0 L0,0 Z" fill="url(#gradTurquoise)" opacity="0.8"/>
+            <path d="M0,120 Q300,90 600,120 T1200,120 L1200,90 Q900,100 600,90 T0,90 Z" fill="url(#gradTurquoise)" opacity="0.2"/>
+            <path d="M800,0 Q900,30 1000,15 T1200,20 L1200,0 Z" fill="#ff6b9d" opacity="0.3"/>
+            <circle cx="150" cy="60" r="30" fill="#20c997" opacity="0.15"/>
+            <circle cx="1050" cy="60" r="40" fill="#20c997" opacity="0.1"/>
+        </svg>
+        
+        <div class="banner-content">
+            <div class="banner-logo-left">
+                <img src="img/Logo.png" alt="Logo Centro MEMI">
+            </div>
+            
+            <div class="banner-text">
+                <h1>EDIFICIO MEMI</h1>
+                <p>UNIVERSIDAD MAYOR DE SAN SIMÓN</p>
+            </div>
+            <div class="banner-logo-right">
+                <div class="sphere">
+                    <div class="sphere-text">MEMI</div>
+                    <div class="sphere-text">CENTRO</div>
+                    <div class="sphere-text">UMSS</div>
+                    <div class="sphere-text">FCyT</div>
+                </div>
+                <img src="img/LogoFCyT.png" alt="Logo FCyT">
+            </div>
         </div>
-      </div>
-      <img src="img/LogoFCyT.png" alt="Logo FCyT" class="banner-logo-img">
     </div>
-  </div>
-</div>
-    <div id="sidebar">
-        <ul>
-            <li class="logo-section">
-                <img src="img/Logo.png" alt="Logo Centro MEMI" class="sidebar-logo">
-                <h3>Centro MEMI</h3>
-                <p>UMSS</p>
-            </li>
-            
-            <li class="menu-item">
-                <i class="fa fa-home"></i> Inicio
-            </li>
-            
-            <li class="menu-item dropdown" data-target="mision-submenu">
-                <i class="fa fa-bullseye"></i> Misión Visión Valores
-                <span class="arrow">&#9662;</span>
-            </li>
-            <ul class="submenu" id="mision-submenu">
-                <li><a href="#mision"><i class="fa fa-target"></i> Misión</a></li>
-                <li><a href="#vision"><i class="fa fa-eye"></i> Visión</a></li>
-                <li><a href="#valores"><i class="fa fa-heart"></i> Valores</a></li>
-            </ul>
-
-            <li class="menu-item dropdown" data-target="acerca-submenu">
-                <i class="fa fa-info-circle"></i> Acerca de
-                <span class="arrow">&#9662;</span>
-            </li>
-            <ul class="submenu" id="acerca-submenu">
-                <li><a href="#antecedentes"><i class="fa fa-history"></i> Antecedentes</a></li>
-                <li><a href="#datos-historicos"><i class="fa fa-calendar"></i> Datos Históricos</a></li>
-                <li><a href="#autoridades"><i class="fa fa-users"></i> Autoridades</a></li>
-            </ul>
-
-            <li class="menu-item dropdown" data-target="cursos-submenu">
-                <i class="fa fa-graduation-cap"></i> Cursos / Seminarios
-                <span class="arrow">&#9662;</span>
-            </li>
-            <ul class="submenu" id="cursos-submenu">
-                <li><a href="#publicaciones"><i class="fa fa-book"></i> Publicaciones</a></li>
-                <li><a href="#servicios"><i class="fa fa-cogs"></i> Servicios</a></li>
-                <li><a href="#icpc"><i class="fa fa-code"></i> ICPC UMSS</a></li>
-                <li><a href="#contacto"><i class="fa fa-envelope"></i> Contacto</a></li>
-            </ul>
-        </ul>
-    </div>
+</header>
     <div id="sidebar-overlay" class="sidebar-overlay"></div>
     <section class="carousel-area w3-container">
         <div class="carousel-container w3-card w3-white">
@@ -332,7 +281,7 @@
                 </div>
             </div>
             <div class="w3-center w3-margin-top footer-bottom">
-                <p class="w3-text-grey">Creado por 202401351@est.umss,edu</p>
+                <p class="w3-text-grey">Creado por 202401351@est.umss.edu</p>
             </div>
         </div>
     </footer>

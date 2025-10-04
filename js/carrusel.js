@@ -273,6 +273,31 @@ if (window.innerWidth <= 768) {
 document.addEventListener('gesturestart', function(e) {
   e.preventDefault();
 });
+const navToggle = document.getElementById('navbar-toggle');
+const navMenu = document.getElementById('navbar-menu');
+
+if (navToggle && navMenu) {
+  navToggle.addEventListener('click', function(e) {
+    e.stopPropagation();
+    this.classList.toggle('active');
+    navMenu.classList.toggle('active');
+    console.log('Menu mobile toggled');
+  });
+  if (window.innerWidth <= 768) {
+    const dropdowns = document.querySelectorAll('.navbar-menu .dropdown');
+    dropdowns.forEach(dropdown => {
+      const link = dropdown.querySelector('.dropdown-toggle');
+      if (link) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          dropdown.classList.toggle('active');
+        });
+      }
+    });
+  }
+  
+  console.log('Navbar integrado inicializado');
+}
 console.log(`
 🏛️ Centro MEMI Día 2 - Sistema cargado
 ✅ Sidebar con submenús: OK
@@ -351,6 +376,60 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!e.target.closest('.navbar-horizontal')) {
             navbarMenu.classList.remove('active');
             navbarToggle.classList.remove('active');
+        }
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const navbarToggle = document.getElementById('navbar-toggle');
+    const navbarMenu = document.getElementById('navbar-menu');
+    const dropdowns = document.querySelectorAll('.navbar-menu .dropdown');
+    
+    if (navbarToggle) {
+        navbarToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            this.classList.toggle('active');
+            navbarMenu.classList.toggle('active');
+        });
+    }
+    
+    if (window.innerWidth <= 768) {
+        dropdowns.forEach(dropdown => {
+            const link = dropdown.querySelector('.dropdown-toggle');
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            });
+        });
+    }
+    
+    const menuLinks = document.querySelectorAll('.navbar-menu a[href^="#"]');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href !== '#') {
+                e.preventDefault();
+                const targetId = href.substring(1);
+                const targetSection = document.getElementById(targetId);
+                
+                if (targetSection) {
+                    document.querySelectorAll('.antecedentes-section, .content-section').forEach(section => {
+                        section.classList.remove('active');
+                    });
+                    
+                    targetSection.classList.add('active');
+                    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    
+                    navbarMenu.classList.remove('active');
+                    navbarToggle.classList.remove('active');
+                }
+            }
+        });
+    });
+    
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.header-integrado')) {
+            navbarMenu.classList.remove('active');
+            if (navbarToggle) navbarToggle.classList.remove('active');
         }
     });
 });
