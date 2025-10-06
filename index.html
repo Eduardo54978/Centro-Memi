@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+<body class="w3-light-grey">
 <header class="header-integrado">
     <nav class="navbar-top">
         <div class="navbar-container">
@@ -69,7 +70,6 @@
                     <stop offset="100%" style="stop-color:#17a288;stop-opacity:1" />
                 </linearGradient>
             </defs>
-            
             <rect width="1200" height="120" fill="#151719"/>
             <path d="M0,20 Q300,5 600,20 T1200,20 L1200,0 L0,0 Z" fill="url(#gradTurquoise)" opacity="0.8"/>
             <path d="M0,120 Q300,90 600,120 T1200,120 L1200,90 Q900,100 600,90 T0,90 Z" fill="url(#gradTurquoise)" opacity="0.2"/>
@@ -77,12 +77,10 @@
             <circle cx="150" cy="60" r="30" fill="#20c997" opacity="0.15"/>
             <circle cx="1050" cy="60" r="40" fill="#20c997" opacity="0.1"/>
         </svg>
-        
         <div class="banner-content">
             <div class="banner-logo-left">
                 <img src="img/Logo.png" alt="Logo Centro MEMI">
             </div>
-            
             <div class="banner-text">
                 <h1>EDIFICIO MEMI</h1>
                 <p>UNIVERSIDAD MAYOR DE SAN SIMÓN</p>
@@ -99,49 +97,60 @@
         </div>
     </div>
 </header>
-    <div id="sidebar-overlay" class="sidebar-overlay"></div>
-    <section class="carousel-area w3-container">
-        <div class="carousel-container w3-card w3-white">
-            <div class="carousel">
-                <div class="slides">
-                    <div class="slide active">
-                        <img src="img/imagen.png" alt="Avisos y Cursos del Centro MEMI" class="slide-image">
-                        <div class="slide-overlay">
-                            <h3>Avisos Institucionales</h3>
-                            <p>Información sobre cursos, seminarios y actividades académicas</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="img/imagen1.png" alt="Edificio del Centro MEMI" class="slide-image">
-                        <div class="slide-overlay">
-                            <h3>Nuestro Edificio</h3>
-                            <p>Infraestructura moderna y espacios funcionales para la educación</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="img/imagen2.png" alt="Laboratorios del Centro MEMI" class="slide-image">
-                        <div class="slide-overlay">
-                            <h3>Laboratorios Especializados</h3>
-                            <p>Aulas equipadas con computadoras para clases prácticas</p>
-                        </div>
+
+<div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+<section class="carousel-area w3-container" id="inicio">
+    <div class="carousel-container w3-card w3-white">
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="img/imagen.png" alt="Avisos y Cursos del Centro MEMI" class="slide-image">
+                    <div class="slide-overlay">
+                        <h3>Avisos Institucionales</h3>
+                        <p>Información sobre cursos, seminarios y actividades académicas</p>
                     </div>
                 </div>
-                <div class="carousel-dots w3-center">
-                    <button class="dot active" data-slide="0"></button>
-                    <button class="dot" data-slide="1"></button>
-                    <button class="dot" data-slide="2"></button>
+                <div class="slide">
+                    <img src="img/imagen1.png" alt="Edificio del Centro MEMI" class="slide-image">
+                    <div class="slide-overlay">
+                        <h3>Nuestro Edificio</h3>
+                        <p>Infraestructura moderna y espacios funcionales para la educación</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/imagen2.png" alt="Laboratorios del Centro MEMI" class="slide-image">
+                    <div class="slide-overlay">
+                        <h3>Laboratorios Especializados</h3>
+                        <p>Aulas equipadas con computadoras para clases prácticas</p>
+                    </div>
                 </div>
             </div>
+            <div class="carousel-dots w3-center">
+                <button class="dot active" data-slide="0"></button>
+                <button class="dot" data-slide="1"></button>
+                <button class="dot" data-slide="2"></button>
+            </div>
         </div>
-    </section>
-    <section class="antecedentes-section w3-container" id="antecedentes">
+    </div>
+</section>
+<section class="antecedentes-section w3-container" id="antecedentes">
     <div class="antecedentes-container w3-card-4 w3-white w3-round-large">
         <div class="antecedentes-header">
             <i class="fa fa-history w3-text-teal"></i>
             <h2 class="w3-text-teal">Antecedentes</h2>
             <div class="header-line"></div>
         </div>
+
         <div class="antecedentes-content">
+            <div class="antecedente-item w3-card">
+                <div class="item-year">1991</div>
+                <div class="item-content">
+                    <h3><i class="fa fa-rocket"></i> Inicio del Programa MEMI</h3>
+                    <p>En enero de 1991 inició sus actividades el Programa de Mejoramiento de la Enseñanza de la Matemática e Informática (MEMI), con el objetivo de mejorar la educación en las áreas de Matemática e Informática de la Facultad de Ciencias y Tecnología en la Universidad Mayor de San Simón. El Proyecto cubrió tres áreas: Matemáticas a nivel universitario, Matemáticas a nivel ciclo medio e Informática a nivel universitario.</p>
+                </div>
+            </div>
+            
             <div class="antecedente-item w3-card">
                 <div class="item-year">1992</div>
                 <div class="item-content">
@@ -149,13 +158,31 @@
                     <p>Nació a la vida como un programa de cooperación académica entre el Departamento de Ciencias de la Computación y el Instituto Freudenthal de la Universidad de Utrecht (Holanda) y la Universidad Mayor de San Simón (Bolivia).</p>
                 </div>
             </div>
+            
+            <div class="antecedente-item w3-card">
+                <div class="item-year">1994-1997</div>
+                <div class="item-content">
+                    <h3><i class="fa fa-graduation-cap"></i> Segunda Fase</h3>
+                    <p>La segunda fase del Programa MEMI abarca el período 1994-1997, en la cual se destacan los primeros posgrados de San Simón, en áreas de Matemática e Informática.</p>
+                </div>
+            </div>
+            
+            <div class="antecedente-item w3-card">
+                <div class="item-year">1999-2003</div>
+                <div class="item-content">
+                    <h3><i class="fa fa-cogs"></i> Tercera Fase</h3>
+                    <p>La tercera fase abarca el período 1999-2003. Su tarea fundamental, en base al compromiso asumido con los cooperantes holandeses (NUFFIC y la Universidad de Utrecht), fue garantizar la sostenibilidad de las actividades de este Programa.</p>
+                </div>
+            </div>
+            
             <div class="antecedente-item w3-card">
                 <div class="item-year">2010</div>
                 <div class="item-content">
                     <h3><i class="fa fa-refresh"></i> Transformación en Centro</h3>
-                    <p>Producto de la adecuación de las unidades universitarias, comienza su transformación en Centro.</p>
+                    <p>Producto de la adecuación de las unidades universitarias, comienza su transformación en Centro. Mediante Resolución Rectoral N° 389/10, el Programa MEMI adopta la denominación de Centro de Mejoramiento de la Enseñanza de la Matemática e Informática (Centro MEMI).</p>
                 </div>
             </div>
+            
             <div class="antecedente-item w3-card">
                 <div class="item-icon"><i class="fa fa-flask"></i></div>
                 <div class="item-content">
@@ -163,66 +190,134 @@
                     <p>El Centro MEMI desarrolla investigación en el área de Ciencias de la Computación, cuenta con capacidad de desarrollo en el área de TI/SI tanto aplicativa como de exploración científica.</p>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+<section class="content-section" id="datos-historicos">
+    <div class="w3-container content-box w3-card-4 w3-white w3-round-large">
+        <div class="section-icon w3-center">
+            <i class="fa fa-line-chart w3-text-teal"></i>
+        </div>
+        <h2 class="w3-center w3-text-teal">Datos Históricos</h2>
+        <div class="divider-line"></div>
+
+        <div class="w3-center" style="margin-bottom: 30px;">
+            <p class="w3-large">Eventos importantes en la trayectoria del Centro MEMI.</p>
+        </div>
+
+        <div class="timeline-historicos">
+            <div class="historico-item w3-card">
+                <div class="item-year">2015</div>
+                <div class="item-content">
+                    <h3><i class="fa fa-trophy"></i> Reconocimiento Nacional</h3>
+                    <p>El Centro MEMI recibió reconocimiento por su contribución a la educación superior en Bolivia, consolidándose como referente en matemática e informática.</p>
+                </div>
+            </div>
+
+            <div class="historico-item w3-card">
+                <div class="item-year">2018</div>
+                <div class="item-content">
+                    <h3><i class="fa fa-users"></i> Expansión del Equipo</h3>
+                    <p>Se amplió el equipo docente incorporando especialistas con doctorados y maestrías de universidades internacionales.</p>
+                </div>
+            </div>
+
+            <div class="historico-item w3-card">
+                <div class="item-year">2020</div>
+                <div class="item-content">
+                    <h3><i class="fa fa-laptop"></i> Transformación Digital</h3>
+                    <p>Adaptación completa a modalidad virtual durante la pandemia, implementando plataformas digitales de última generación.</p>
+                </div>
+            </div>
+
+            <div class="historico-item w3-card">
+                <div class="item-year">2023</div>
+                <div class="item-content">
+                    <h3><i class="fa fa-globe"></i> Proyección Internacional</h3>
+                    <p>Establecimiento de convenios con universidades de América Latina y Europa para programas de intercambio académico.</p>
+                </div>
+            </div>
+
+            <div class="historico-item w3-card">
+                <div class="item-content">
+                    <h3><i class="fa fa-star"></i> Presente y Futuro</h3>
+                    <p>Hoy el Centro MEMI continúa innovando en metodologías de enseñanza, investigación científica y desarrollo tecnológico, formando profesionales de excelencia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <section class="content-section" id="mision">
     <div class="w3-container content-box w3-card-4 w3-white w3-round-large">
         <div class="section-icon w3-center">
             <i class="fa fa-target w3-text-teal"></i>
         </div>
-        <h2 class="w3-center w3-text-teal">Nuestra Misión</h2>
+        <h2 class="w3-center w3-text-teal">Misión</h2>
         <div class="divider-line"></div>
         <div class="content-text">
-            <p>El Centro MEMI de la Universidad Mayor de San Simón es un espacio académico moderno que alberga aulas, laboratorios y oficinas administrativas.</p>
+            <p>Brindar cursos especializados, asesoramiento y elaboración de textos de apoyo a profesionales de las áreas de Matemáticas e Informática tanto de Universidad como de Colegio, orientados al mejoramiento de su enseñanza y aprendizaje.</p>
         </div>
     </div>
 </section>
+
 <section class="content-section" id="vision">
     <div class="w3-container content-box w3-card-4 w3-white w3-round-large">
         <div class="section-icon w3-center">
             <i class="fa fa-eye w3-text-teal"></i>
         </div>
-        <h2 class="w3-center w3-text-teal">Nuestra Visión</h2>
+        <h2 class="w3-center w3-text-teal">Visión</h2>
         <div class="divider-line"></div>
         <div class="content-text">
-            <div class="vision-item">
-                <i class="fa fa-cogs w3-text-teal"></i>
-                <p>Proveer servicios de consultoría en el despliegue de soluciones SI/TI a nivel universitario.</p>
-            </div>
-            <div class="vision-item">
-                <i class="fa fa-graduation-cap w3-text-teal"></i>
-                <p>La mejora y actualización permanente de los recursos humanos en matemáticas e informática para la formación de profesionales de alta calidad en niveles pre y posgradual.</p>
-            </div>
+            <p>Ser un Centro de apoyo de referencia en la enseñanza de la Matemática y la Informática en nuestra comunidad, tanto para profesionales universitarios, profesores de colegio y estudiantes.</p>
         </div>
     </div>
 </section>
+
 <section class="content-section" id="valores">
     <div class="w3-container content-box w3-card-4 w3-white w3-round-large">
         <div class="section-icon w3-center">
             <i class="fa fa-heart w3-text-teal"></i>
         </div>
-        <h2 class="w3-center w3-text-teal">Nuestros Valores</h2>
+        <h2 class="w3-center w3-text-teal">Valores</h2>
         <div class="divider-line"></div>
         <div class="content-text">
-            <div class="valores-grid">
-                <div class="valor-card w3-card">
-                    <i class="fa fa-lightbulb-o"></i>
-                    <h4>Innovación</h4>
-                    <p>Búsqueda constante de soluciones tecnológicas avanzadas.</p>
+            <p class="w3-center w3-large">Nuestros valores son:</p>
+            <div class="valores-grid-oficial">
+                <div class="valor-card-oficial w3-card">
+                    <i class="fa fa-handshake-o"></i>
+                    <h4>Respeto</h4>
                 </div>
-                <div class="valor-card w3-card">
+                <div class="valor-card-oficial w3-card">
                     <i class="fa fa-users"></i>
                     <h4>Colaboración</h4>
-                    <p>Trabajo en equipo para alcanzar objetivos comunes.</p>
                 </div>
-                <div class="valor-card w3-card">
-                    <i class="fa fa-star"></i>
-                    <h4>Excelencia</h4>
-                    <p>Compromiso con la calidad en todos nuestros servicios.</p>
+                <div class="valor-card-oficial w3-card">
+                    <i class="fa fa-heart"></i>
+                    <h4>Compromiso</h4>
                 </div>
-                <div class="valor-card w3-card">
-                    <i class="fa fa-globe"></i>
+                <div class="valor-card-oficial w3-card">
+                    <i class="fa fa-shield"></i>
                     <h4>Responsabilidad</h4>
-                    <p>Compromiso social y académico con la comunidad.</p>
+                </div>
+                <div class="valor-card-oficial w3-card">
+                    <i class="fa fa-thumbs-up"></i>
+                    <h4>Confianza</h4>
+                </div>
+                <div class="valor-card-oficial w3-card">
+                    <i class="fa fa-group"></i>
+                    <h4>Trabajo en equipo</h4>
+                </div>
+                <div class="valor-card-oficial w3-card">
+                    <i class="fa fa-comment"></i>
+                    <h4>Espíritu crítico</h4>
+                </div>
+                <div class="valor-card-oficial w3-card">
+                    <i class="fa fa-lightbulb-o"></i>
+                    <h4>Innovación</h4>
+                </div>
+                <div class="valor-card-oficial w3-card">
+                    <i class="fa fa-paint-brush"></i>
+                    <h4>Creatividad</h4>
                 </div>
             </div>
         </div>
@@ -241,95 +336,59 @@
                 <strong>International Collegiate Programming Contest</strong> - Programación Competitiva
             </p>
         </div>
+
         <div class="icpc-content">
             <div class="icpc-description w3-card">
                 <h3><i class="fa fa-trophy"></i> ¿Qué es ICPC?</h3>
                 <p>La ICPC es una competencia internacional de programación donde equipos de estudiantes resuelven problemas algorítmicos complejos en tiempo limitado. Es la competencia de programación más prestigiosa a nivel mundial.</p>
+                <p class="icpc-highlight"><i class="fa fa-home"></i> El Centro MEMI acoge en su infraestructura al ICPC UMSS</p>
             </div>
-            <div class="icpc-benefits">
-                <h3 class="w3-center w3-text-teal">¿Por qué participar?</h3>
-                <div class="benefits-grid">
-                    <div class="benefit-card">
-                        <i class="fa fa-lightbulb-o"></i>
-                        <h4>Desarrollo de Habilidades</h4>
-                        <p>Mejora tu capacidad de resolución de problemas y pensamiento algorítmico.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <i class="fa fa-users"></i>
-                        <h4>Trabajo en Equipo</h4>
-                        <p>Colabora con otros programadores en equipos de 3 estudiantes.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <i class="fa fa-briefcase"></i>
-                        <h4>Oportunidades Laborales</h4>
-                        <p>Las empresas tecnológicas buscan activamente participantes de ICPC.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <i class="fa fa-globe"></i>
-                        <h4>Competencia Internacional</h4>
-                        <p>Representa a Bolivia y la UMSS en competencias mundiales.</p>
-                    </div>
+
+            <div class="icpc-imagen w3-center">
+                <img src="img/icpc-logo.png" alt="ICPC UMSS" class="icpc-img w3-card">
+            </div>
+            <div class="icpc-afiches">
+                <h3 class="w3-center w3-text-teal"><i class="fa fa-file-image-o"></i> Afiches</h3>
+                
+                <div class="upload-section w3-card">
+                    <label for="subirAfiches" class="upload-btn w3-button w3-teal">
+                        <i class="fa fa-upload"></i> Subir Afiches
+                    </label>
+                    <input type="file" id="subirAfiches" accept="image/*" multiple style="display: none;">
+                </div>
+                <div class="afiches-grid" id="afichesContainer">
                 </div>
             </div>
-            <div class="icpc-courses w3-pale-blue w3-card">
-                <h3 class="w3-text-teal"><i class="fa fa-graduation-cap"></i> Cursos y Entrenamientos</h3>
-                <div class="courses-list">
-                    <div class="course-item">
-                        <i class="fa fa-check-circle w3-text-teal"></i>
-                        <div>
-                            <strong>Estructuras de Datos</strong>
-                            <p>Arrays, Listas, Árboles, Grafos, Hash Tables</p>
-                        </div>
+            <div class="icpc-galeria">
+                <h3 class="w3-center w3-text-teal"><i class="fa fa-camera"></i> Galería de Fotos</h3>
+                <div class="upload-section w3-card">
+                    <label for="subirFotos" class="upload-btn w3-button w3-teal">
+                        <i class="fa fa-upload"></i> Subir Fotos
+                    </label>
+                    <input type="file" id="subirFotos" accept="image/*" multiple style="display: none;">
+                </div>
+                <div class="carrusel-container w3-card" id="carruselContainer" style="display: none;">
+                    <div class="carrusel-slides" id="carruselFotos">
                     </div>
-                    <div class="course-item">
-                        <i class="fa fa-check-circle w3-text-teal"></i>
-                        <div>
-                            <strong>Algoritmos Avanzados</strong>
-                            <p>Búsqueda, Ordenamiento, Programación Dinámica, Grafos</p>
-                        </div>
-                    </div>
-                    <div class="course-item">
-                        <i class="fa fa-check-circle w3-text-teal"></i>
-                        <div>
-                            <strong>Matemáticas Competitivas</strong>
-                            <p>Teoría de Números, Combinatoria, Geometría Computacional</p>
-                        </div>
-                    </div>
-                    <div class="course-item">
-                        <i class="fa fa-check-circle w3-text-teal"></i>
-                        <div>
-                            <strong>Resolución de Problemas</strong>
-                            <p>Estrategias, Optimización, Análisis de Complejidad</p>
-                        </div>
-                    </div>
+                    <button class="carrusel-btn carrusel-prev" onclick="cambiarSlide(-1)">
+                        <i class="fa fa-chevron-left"></i>
+                    </button>
+                    <button class="carrusel-btn carrusel-next" onclick="cambiarSlide(1)">
+                        <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <div class="carrusel-dots" id="carruselDots"></div>
                 </div>
             </div>
-            <div class="icpc-contact">
-                <h3 class="w3-center w3-text-teal">¿Interesado en participar?</h3>
-                <div class="contact-info-grid">
-                    <div class="contact-info-card w3-card">
-                        <i class="fa fa-facebook w3-text-teal"></i>
-                        <h4>Síguenos en Facebook</h4>
-                        <a href="https://www.facebook.com/icpcumss" target="_blank" class="w3-button w3-teal w3-round">
-                            facebook.com/icpcumss
-                        </a>
-                    </div>
-                    <div class="contact-info-card w3-card">
-                        <i class="fa fa-envelope w3-text-teal"></i>
-                        <h4>Contáctanos</h4>
-                        <p>Consulta sobre próximos cursos y competencias</p>
-                        <a href="#contacto" class="w3-button w3-teal w3-round">Ir a Contacto</a>
-                    </div>
+            <div class="icpc-videos">
+                <h3 class="w3-center w3-text-teal"><i class="fa fa-video-camera"></i> Videos</h3>
+                <div class="upload-section w3-card">
+                    <label for="subirVideos" class="upload-btn w3-button w3-teal">
+                        <i class="fa fa-upload"></i> Subir Videos
+                    </label>
+                    <input type="file" id="subirVideos" accept="video/*" multiple style="display: none;">
                 </div>
-            </div>
-            <div class="icpc-requirements w3-card">
-                <h4><i class="fa fa-info-circle"></i> Requisitos</h4>
-                <ul class="requirements-list">
-                    <li>Ser estudiante activo de la UMSS</li>
-                    <li>Conocimientos básicos de programación</li>
-                    <li>Disposición para trabajo en equipo</li>
-                    <li>Compromiso con el entrenamiento constante</li>
-                </ul>
+                <div class="videos-grid" id="videosContainer">
+                </div>
             </div>
         </div>
     </div>
@@ -345,108 +404,118 @@
         <div class="servicios-intro w3-center">
             <p class="w3-large">El Centro MEMI ofrece una amplia gama de servicios tecnológicos y académicos para estudiantes, docentes y la comunidad universitaria.</p>
         </div>
-        <div class="servicios-principales">
-            <h3 class="w3-center w3-text-teal">Servicios Disponibles</h3>
-            <div class="servicios-grid">
-                <div class="servicio-card w3-card">
-                    <div class="servicio-icon">
-                        <i class="fa fa-laptop"></i>
-                    </div>
-                    <h4>Laboratorios de Computación</h4>
-                    <p>Acceso a laboratorios equipados con tecnología moderna para desarrollo de proyectos, prácticas y trabajos académicos.</p>
-                    <ul class="servicio-detalles">
-                        <li><i class="fa fa-check"></i> 15 laboratorios especializados</li>
-                        <li><i class="fa fa-check"></i> Equipos de última generación</li>
-                        <li><i class="fa fa-check"></i> Software especializado</li>
-                        <li><i class="fa fa-check"></i> Conexión de alta velocidad</li>
-                    </ul>
+
+        <div class="servicios-grid">
+            <div class="servicio-card w3-card">
+                <div class="servicio-icon">
+                    <i class="fa fa-chalkboard-teacher"></i>
                 </div>
-                <div class="servicio-card w3-card">
-                    <div class="servicio-icon">
-                        <i class="fa fa-users"></i>
-                    </div>
-                    <h4>Consultoría TI/SI</h4>
-                    <p>Asesoramiento experto en Tecnologías de la Información y Sistemas de Información para proyectos universitarios.</p>
-                    <ul class="servicio-detalles">
-                        <li><i class="fa fa-check"></i> Análisis de requerimientos</li>
-                        <li><i class="fa fa-check"></i> Diseño de arquitecturas</li>
-                        <li><i class="fa fa-check"></i> Implementación de sistemas</li>
-                        <li><i class="fa fa-check"></i> Optimización de procesos</li>
-                    </ul>
+                <h3>Cursos de Formación para Profesores de Colegio</h3>
+                <p>Enseñando a enseñar en las áreas de Matemáticas y Computación, con un enfoque práctico y basado en las nuevas tecnologías de información y comunicación, respetando los lineamientos educativos para secundaria, pero con una proyección de utilidad para la transición de alumnos Colegio - Universidad.</p>
+            </div>
+
+            <div class="servicio-card w3-card">
+                <div class="servicio-icon">
+                    <i class="fa fa-graduation-cap"></i>
                 </div>
-                <div class="servicio-card w3-card">
-                    <div class="servicio-icon">
-                        <i class="fa fa-code"></i>
-                    </div>
-                    <h4>Desarrollo de Software</h4>
-                    <p>Apoyo en el desarrollo de aplicaciones web, móviles y de escritorio para proyectos académicos y de investigación.</p>
-                    <ul class="servicio-detalles">
-                        <li><i class="fa fa-check"></i> Aplicaciones web</li>
-                        <li><i class="fa fa-check"></i> Aplicaciones móviles</li>
-                        <li><i class="fa fa-check"></i> Sistemas de gestión</li>
-                        <li><i class="fa fa-check"></i> APIs y servicios web</li>
-                    </ul>
+                <h3>Cursos de Actualización para Profesionales</h3>
+                <p>Orientado a la actualización de profesionales egresados de las carreras de Matemáticas, Informática y Sistemas, además de otras carreras, en tecnologías informáticas emergentes o de tendencia. Todos los cursos con valor curricular para los participantes.</p>
+            </div>
+
+            <div class="servicio-card w3-card">
+                <div class="servicio-icon">
+                    <i class="fa fa-users"></i>
                 </div>
-                <div class="servicio-card w3-card">
-                    <div class="servicio-icon">
-                        <i class="fa fa-graduation-cap"></i>
-                    </div>
-                    <h4>Capacitaciones</h4>
-                    <p>Cursos, talleres y seminarios sobre diversas tecnologías y herramientas de desarrollo.</p>
-                    <ul class="servicio-detalles">
-                        <li><i class="fa fa-check"></i> Lenguajes de programación</li>
-                        <li><i class="fa fa-check"></i> Bases de datos</li>
-                        <li><i class="fa fa-check"></i> Frameworks modernos</li>
-                        <li><i class="fa fa-check"></i> Metodologías ágiles</li>
-                    </ul>
+                <h3>Asesoramiento en la Enseñanza de las Matemáticas y la Informática</h3>
+                <p>Brindamos asesoramiento y seguimiento a profesores de secundaria y docentes universitarios de las áreas de Matemáticas e Informática en métodos, técnicas y herramientas pedagógicas que mejoren su práctica docente y el aprendizaje significativo de sus estudiantes.</p>
+            </div>
+
+            <div class="servicio-card w3-card">
+                <div class="servicio-icon">
+                    <i class="fa fa-comments"></i>
                 </div>
-                <div class="servicio-card w3-card">
-                    <div class="servicio-icon">
-                        <i class="fa fa-flask"></i>
-                    </div>
-                    <h4>Apoyo a la Investigación</h4>
-                    <p>Recursos y asesoría para proyectos de investigación en Ciencias de la Computación.</p>
-                    <ul class="servicio-detalles">
-                        <li><i class="fa fa-check"></i> Infraestructura tecnológica</li>
-                        <li><i class="fa fa-check"></i> Herramientas especializadas</li>
-                        <li><i class="fa fa-check"></i> Asesoría técnica</li>
-                        <li><i class="fa fa-check"></i> Espacios de trabajo</li>
-                    </ul>
+                <h3>Conferencias y Seminarios Especializados</h3>
+                <p>Facilitamos nuestros ambientes e infraestructura para conferencias, seminarios, talleres, conversatorios con profesionales destacados locales o extranjeros, que quieran compartir sus experiencias y conocimientos con profesionales y estudiantes de nuestra universidad.</p>
+                <div class="servicio-detalles">
+                    <p><strong>Disponemos de:</strong> Dos salas con capacidad de 40 personas cada una, equipados con data display, pizarras, porta banderas, etc.</p>
                 </div>
-                <div class="servicio-card w3-card">
-                    <div class="servicio-icon">
-                        <i class="fa fa-wrench"></i>
+            </div>
+
+            <div class="servicio-card w3-card">
+                <div class="servicio-icon">
+                    <i class="fa fa-building"></i>
+                </div>
+                <h3>Alquiler de Ambientes</h3>
+                <p>Disponemos de dos ambientes cómodos para defensas públicas, cursos, seminarios, talleres, de carácter privado, con todo el equipamiento para el éxito de sus eventos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="content-section" id="autoridades">
+    <div class="w3-container content-box w3-card-4 w3-white w3-round-large">
+        <div class="section-icon w3-center">
+            <i class="fa fa-users w3-text-teal"></i>
+        </div>
+        <h2 class="w3-center w3-text-teal">Autoridades y Personal</h2>
+        <div class="divider-line"></div>
+        
+        <div class="autoridades-intro w3-center">
+            <p class="w3-large">Conoce al equipo que lidera el Centro MEMI en su compromiso con la excelencia académica.</p>
+        </div>
+        <div class="autoridades-container">
+            <h3 class="subseccion-title w3-center">
+                <i class="fa fa-star"></i> Autoridades
+            </h3>
+            <div class="autoridades-grid">
+                <div class="autoridad-card w3-card">
+                    <div class="autoridad-foto">
+                        <div class="avatar-placeholder">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <!-- <img src="img/director.jpg" alt="Director" class="autoridad-imagen"> -->
                     </div>
-                    <h4>Soporte Técnico</h4>
-                    <p>Asistencia técnica en hardware, software y redes para la comunidad universitaria.</p>
-                    <ul class="servicio-detalles">
-                        <li><i class="fa fa-check"></i> Mantenimiento de equipos</li>
-                        <li><i class="fa fa-check"></i> Configuración de software</li>
-                        <li><i class="fa fa-check"></i> Resolución de problemas</li>
-                        <li><i class="fa fa-check"></i> Asesoría personalizada</li>
-                    </ul>
+                    <div class="autoridad-info">
+                        <h4>Mgr. Kirt Rolando Jaldín Rosales</h4>
+                        <p class="cargo"><i class="fa fa-briefcase"></i> Director Centro MEMI</p>
+                    </div>
+                </div>
+                <div class="autoridad-card w3-card">
+                    <div class="autoridad-foto">
+                        <div class="avatar-placeholder">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <!-- <img src="img/matematica.jpg" alt="Coordinador Matemática" class="autoridad-imagen"> -->
+                    </div>
+                    <div class="autoridad-info">
+                        <h4>Mgr. Luis Roberto Zegarra Dorado</h4>
+                        <p class="cargo"><i class="fa fa-calculator"></i> Coordinador Área Matemática</p>
+                    </div>
+                </div>
+                <div class="autoridad-card w3-card">
+                    <div class="autoridad-foto">
+                        <div class="avatar-placeholder">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <!-- <img src="img/informatica.jpg" alt="Coordinador Informática" class="autoridad-imagen"> -->
+                    </div>
+                    <div class="autoridad-info">
+                        <h4>Mgr. Jorge Orellana Araoz</h4>
+                        <p class="cargo"><i class="fa fa-laptop"></i> Coordinador Área Informática</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="servicios-adicional w3-pale-blue w3-card">
-            <div class="adicional-grid">
-                <div class="adicional-item">
-                    <i class="fa fa-clock-o w3-text-teal"></i>
-                    <h4>Horarios Flexibles</h4>
-                    <p>Acceso a laboratorios en horarios extendidos para adaptarnos a tu agenda académica.</p>
-                </div>
-                <div class="adicional-item">
-                    <i class="fa fa-users w3-text-teal"></i>
-                    <h4>Personal Calificado</h4>
-                    <p>Equipo de profesionales con amplia experiencia en tecnología y educación.</p>
-                </div>
-                <div class="adicional-item">
-                    <i class="fa fa-refresh w3-text-teal"></i>
-                    <h4>Actualización Constante</h4>
-                    <p>Equipamiento y software actualizado según las últimas tendencias tecnológicas.</p>
-                </div>
+        <div class="organigrama-section">
+            <h3 class="subseccion-title w3-center">
+                <i class="fa fa-sitemap"></i> Organigrama Institucional
+            </h3>
+            
+            <div class="organigrama-container w3-card">
+                <img src="img/organigrama.png" class="organigrama-imagen" alt="Organigrama Centro MEMI">
             </div>
         </div>
+    </div>
+</section>
 <section class="content-section" id="contacto">
     <div class="w3-container content-box w3-card-4 w3-white w3-round-large">
         <div class="section-icon w3-center">
@@ -462,147 +531,161 @@
         <div class="contacto-grid">
             <div class="contacto-card w3-card">
                 <div class="contacto-icon">
+                    <i class="fa fa-map-marker"></i>
+                </div>
+                <h3>Dirección</h3>
+                <p class="contacto-text">Campus Central UMSS<br>Edificio MEMI</p>
+            </div>
+            
+            <div class="contacto-card w3-card">
+                <div class="contacto-icon">
+                    <i class="fa fa-phone"></i>
+                </div>
+                <h3>Teléfono</h3>
+                <p class="contacto-text">(+591) 4 4666037</p>
+                <p class="contacto-text">IP 36540</p>
+            </div>
+            
+            <div class="contacto-card w3-card">
+                <div class="contacto-icon">
                     <i class="fa fa-envelope-o"></i>
                 </div>
                 <h3>Correo Electrónico</h3>
-                <p class="contacto-descripcion">Envíanos un mensaje y te responderemos a la brevedad.</p>
                 <a href="mailto:memi@fcyt.umss.edu.bo" class="contacto-link">
                     memi@fcyt.umss.edu.bo
                 </a>
-                <a href="mailto:memi@fcyt.umss.edu.bo" class="w3-button w3-teal w3-round w3-margin-top">
-                    <i class="fa fa-paper-plane"></i> Enviar Email
-                </a>
             </div>
+            
             <div class="contacto-card w3-card">
                 <div class="contacto-icon">
                     <i class="fa fa-facebook"></i>
                 </div>
                 <h3>Facebook Centro MEMI</h3>
-                <p class="contacto-descripcion">Síguenos para estar al tanto de noticias y eventos.</p>
                 <a href="https://www.facebook.com/memiumss/" target="_blank" rel="noopener" class="contacto-link">
                     facebook.com/memiumss
                 </a>
-                <a href="https://www.facebook.com/memiumss/" target="_blank" rel="noopener" class="w3-button w3-teal w3-round w3-margin-top">
-                    <i class="fa fa-facebook"></i> Visitar Página
-                </a>
-            </div>
-            <div class="contacto-card w3-card">
-                <div class="contacto-icon">
-                    <i class="fa fa-code"></i>
-                </div>
-                <h3>ICPC UMSS</h3>
-                <p class="contacto-descripcion">Información sobre programación competitiva.</p>
-                <a href="https://www.facebook.com/icpcumss" target="_blank" rel="noopener" class="contacto-link">
-                    facebook.com/icpcumss
-                </a>
-                <a href="https://www.facebook.com/icpcumss" target="_blank" rel="noopener" class="w3-button w3-teal w3-round w3-margin-top">
-                    <i class="fa fa-facebook"></i> Visitar Página
-                </a>
-            </div>
-            <div class="contacto-card w3-card">
-                <div class="contacto-icon">
-                    <i class="fa fa-globe"></i>
-                </div>
-                <h3>Sitio Web FCyT</h3>
-                <p class="contacto-descripcion">Portal de la Facultad de Ciencias y Tecnología.</p>
-                <a href="https://www.fcyt.umss.edu.bo" target="_blank" rel="noopener" class="contacto-link">
-                    www.fcyt.umss.edu.bo
-                </a>
-                <a href="https://www.fcyt.umss.edu.bo" target="_blank" rel="noopener" class="w3-button w3-teal w3-round w3-margin-top">
-                    <i class="fa fa-external-link"></i> Visitar Sitio
-                </a>
             </div>
         </div>
-        <div class="contacto-info w3-pale-blue w3-card">
-            <h3 class="w3-text-teal"><i class="fa fa-info-circle"></i> Información Adicional</h3>
-            <div class="info-items">
-                <div class="info-item">
-                    <i class="fa fa-map-marker w3-text-teal"></i>
-                    <div>
-                        <strong>Ubicación</strong>
-                        <p>Edificio MEMI - Facultad de Ciencias y Tecnología<br>Universidad Mayor de San Simón<br>Cochabamba, Bolivia</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <i class="fa fa-clock-o w3-text-teal"></i>
-                    <div>
-                        <strong>Horario de Atención</strong>
-                        <p>Lunes a Viernes: 8:00 - 16:00<br>Sábados: 8:00 - 12:00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="contacto-cta w3-center">
-            <h3>¿Listo para comenzar?</h3>
-            <p>Contáctanos hoy y descubre todo lo que el Centro MEMI tiene para ofrecerte.</p>
-            <div class="cta-buttons">
-                <a href="mailto:memi@fcyt.umss.edu.bo" class="w3-button w3-teal w3-large w3-round">
-                    <i class="fa fa-envelope"></i> Enviar Correo
-                </a>
-                <a href="https://www.facebook.com/memiumss/" target="_blank" rel="noopener" class="w3-button w3-indigo w3-large w3-round">
-                    <i class="fa fa-facebook"></i> Facebook
-                </a>
+
+        <div class="mapa-section w3-margin-top">
+            <h3 class="w3-center w3-text-teal">Ubicación</h3>
+            <div class="mapa-container w3-card">
+                <img src="img/mapa-memi.png" alt="Ubicación Centro MEMI" class="mapa-image">
             </div>
         </div>
     </div>
 </section>
-    <main class="w3-container w3-margin-top main-content">
-        <div class="w3-card w3-white w3-padding-large content-card">
-            <h2 class="w3-center w3-text-teal section-title">Bienvenidos al Centro MEMI</h2>
-            <div class="title-divider w3-center"></div>
-            
-            <div class="w3-row-padding w3-margin-top">
-                <div class="w3-col m6 s12">
-                    <div class="info-box w3-card w3-padding">
-                        <h3 class="w3-text-teal"><i class="fa fa-university"></i> Nuestra Misión</h3>
-                        <p>El Centro MEMI de la Universidad Mayor de San Simón es un espacio académico 
-                        moderno que alberga aulas, laboratorios y oficinas administrativas.</p>
-                    </div>
+<section class="content-section" id="publicaciones">
+    <div class="w3-container content-box w3-card-4 w3-white w3-round-large">
+        <div class="section-icon w3-center">
+            <i class="fa fa-book w3-text-teal"></i>
+        </div>
+        <h2 class="w3-center w3-text-teal">Publicaciones</h2>
+        <div class="divider-line"></div>
+        
+        <div class="publicaciones-intro w3-center">
+            <p class="w3-large">Accede a nuestras publicaciones académicas en las áreas de Matemáticas e Informática.</p>
+        </div>
+        <div class="publicaciones-tabs w3-center">
+            <button class="tab-btn active" onclick="cambiarCategoria('matematicas')">
+                <i class="fa fa-calculator"></i> Matemáticas
+            </button>
+            <button class="tab-btn" onclick="cambiarCategoria('informatica')">
+                <i class="fa fa-laptop"></i> Informática
+            </button>
+        </div>
+        <div class="upload-publicacion w3-card">
+            <h3 class="w3-center w3-text-teal"><i class="fa fa-upload"></i> Subir Nueva Publicación</h3>
+            <form class="upload-form" id="formPublicacion">
+                <div class="form-group">
+                    <label for="categoriaPublicacion">
+                        <i class="fa fa-tag"></i> Categoría:
+                    </label>
+                    <select id="categoriaPublicacion" class="w3-select w3-border" required>
+                        <option value="">Selecciona una categoría</option>
+                        <option value="matematicas">Matemáticas</option>
+                        <option value="informatica">Informática</option>
+                    </select>
                 </div>
-                <div class="w3-col m6 s12">
-                    <div class="info-box w3-card w3-padding">
-                        <h3 class="w3-text-teal"><i class="fa fa-cogs"></i> Nuestros Servicios</h3>
-                        <p>Ofrecemos laboratorios de computación, aulas multimedia, 
-                        espacios de investigación y capacitación especializada.</p>
-                    </div>
+
+                <div class="form-group">
+                    <label for="nombreDocumento">
+                        <i class="fa fa-file-text-o"></i> Nombre del Documento:
+                    </label>
+                    <input type="text" id="nombreDocumento" class="w3-input w3-border" placeholder="Ej: Álgebra Lineal Avanzada" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcionDocumento">
+                        <i class="fa fa-align-left"></i> Descripción / Resumen:
+                    </label>
+                    <textarea id="descripcionDocumento" class="w3-input w3-border" rows="4" placeholder="Describe brevemente el contenido del documento..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="archivoDocumento" class="upload-label">
+                        <i class="fa fa-file-pdf-o"></i> Archivo PDF:
+                    </label>
+                    <input type="file" id="archivoDocumento" accept=".pdf" required>
+                    <span class="file-name" id="fileName">No se ha seleccionado ningún archivo</span>
+                </div>
+
+                <button type="submit" class="w3-button w3-teal w3-round">
+                    <i class="fa fa-check"></i> Publicar Documento
+                </button>
+            </form>
+        </div>
+        <div class="publicaciones-container active" id="matematicas-container">
+            <h3 class="categoria-title">
+                <i class="fa fa-calculator"></i> Matemáticas
+            </h3>
+            <div class="publicaciones-grid" id="matematicas-grid">
+            </div>
+        </div>
+        <div class="publicaciones-container" id="informatica-container">
+            <h3 class="categoria-title">
+                <i class="fa fa-laptop"></i> Informática
+            </h3>
+            <div class="publicaciones-grid" id="informatica-grid">
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer-section w3-dark-grey w3-padding-32 w3-margin-top">
+    <div class="w3-container">
+        <div class="w3-row-padding contact-grid">
+            <div class="w3-col m4 s12 w3-center contact-item">
+                <div class="contact-card w3-padding">
+                    <i class="fa fa-envelope w3-xxlarge w3-text-teal"></i>
+                    <h4 class="w3-text-white">Email</h4>
+                    <p class="w3-text-light-grey">memi@fcyt.umss.edu.bo</p>
+                </div>
+            </div>
+            <div class="w3-col m4 s12 w3-center contact-item">
+                <div class="contact-card w3-padding">
+                    <i class="fa fa-facebook w3-xxlarge w3-text-teal"></i>
+                    <h4 class="w3-text-white">Facebook</h4>
+                    <a href="https://www.facebook.com/memiumss/" target="_blank" class="w3-text-light-grey w3-hover-text-teal">
+                        facebook.com/memiumss
+                    </a>
+                </div>
+            </div>
+            <div class="w3-col m4 s12 w3-center contact-item">
+                <div class="contact-card w3-padding">
+                    <i class="fa fa-globe w3-xxlarge w3-text-teal"></i>
+                    <h4 class="w3-text-white">Sitio Web</h4>
+                    <a href="https://www.fcyt.umss.edu.bo" target="_blank" class="w3-text-light-grey w3-hover-text-teal">
+                        www.fcyt.umss.edu.bo
+                    </a>
                 </div>
             </div>
         </div>
-    </main>
-    <footer class="footer-section w3-dark-grey w3-padding-32 w3-margin-top">
-        <div class="w3-container">
-            <div class="w3-row-padding contact-grid">
-                <div class="w3-col m4 s12 w3-center contact-item">
-                    <div class="contact-card w3-padding">
-                        <i class="fa fa-envelope w3-xxlarge w3-text-teal"></i>
-                        <h4 class="w3-text-white">Email</h4>
-                        <p class="w3-text-light-grey">memi@fcyt.umss.edu.bo</p>
-                    </div>
-                </div>
-                <div class="w3-col m4 s12 w3-center contact-item">
-                    <div class="contact-card w3-padding">
-                        <i class="fa fa-facebook w3-xxlarge w3-text-teal"></i>
-                        <h4 class="w3-text-white">Facebook</h4>
-                        <a href="https://www.facebook.com/memiumss/" target="_blank" class="w3-text-light-grey w3-hover-text-teal">
-                            facebook.com/memiumss
-                        </a>
-                    </div>
-                </div>
-                <div class="w3-col m4 s12 w3-center contact-item">
-                    <div class="contact-card w3-padding">
-                        <i class="fa fa-globe w3-xxlarge w3-text-teal"></i>
-                        <h4 class="w3-text-white">Sitio Web</h4>
-                        <a href="https://www.fcyt.umss.edu.bo" target="_blank" class="w3-text-light-grey w3-hover-text-teal">
-                            www.fcyt.umss.edu.bo
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="w3-center w3-margin-top footer-bottom">
-                <p class="w3-text-grey">Creado por 202401351@est.umss.edu</p>
-            </div>
+        <div class="w3-center w3-margin-top footer-bottom">
+            <p class="w3-text-grey">Creado por 202401351@est.umss.edu</p>
         </div>
-    </footer>
-    <script src="js/carrusel.js"></script>
+    </div>
+</footer>
+
+<script src="js/carrusel.js"></script>
 </body>
 </html>
